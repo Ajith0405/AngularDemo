@@ -1,0 +1,13 @@
+<h1>String Interpolation</h1>
+    <h2>{{name}}</h2>
+    <h3>₹ {{price}}</h3>
+    <p>{{specs}}</p>
+
+<h1>String Interpolation Object Data</h1>
+    <h2>{{products.pname}}</h2>
+    <h3>{{ '₹'+ products.pcost}}</h3>
+    <h4>{{products.pspecs}}</h4>
+    <h5>{{"Offer : "+ products.discount +"%"}}</h5>
+    <h3>{{"Discount : "+ (products.pcost * products.discount /100)}}</h3>
+    <h3>{{"Offer Price : " + getOfferPrice()}}</h3>
+    <h3>{{products.stock > 0 ? 'Only ' + products.stock +' items left' : 'Not in stock'  }}</h3>
