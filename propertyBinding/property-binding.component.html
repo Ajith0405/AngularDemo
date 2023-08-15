@@ -1,0 +1,16 @@
+<h1>Property Binding</h1>
+<img [src]="products.pimage" alt="iphone 14 max" height="230px" width="190px">
+<h2>{{products.pname}}</h2>
+    <h3>{{ 'Price : ₹'+ products.pcost}}</h3>
+    <h4>{{products.pspecs}}</h4>
+    <h5>{{"Offer : "+ products.discount +"%"}}</h5>
+    <h3>{{"Discount : "+ (products.pcost * products.discount /100)}}</h3>
+    <h3>{{"Offer Price : " + getOfferPrice()}}</h3>
+    <h3>{{products.stock > 0 ? 'Only ' + products.stock +' items left' : 'Not in stock'  }}</h3>
+
+    <label for="">Pin code : <input type="text" [value]="pincode"></label>
+    <br> <br>
+    <button [disabled]="!(products.stock >0)" >Buy Now</button>
+
+    <h3>Attribute binding</h3>
+    <input type="text" value="Ajith" [attr.aria-hidden]="" >
