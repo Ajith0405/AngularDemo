@@ -1,0 +1,27 @@
+<h3>Your Produts : </h3>
+<div class="ekart-products-container">
+    <div class="ekart-product-item" *ngFor="let prod of products,let i = index">
+        <div class="eart-add-wishlist">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <h1>{{i+1}}</h1>
+        </div>
+        <div class="ekart-product-image">
+            <img [src]="prod.imageUrl" class="ekart-product-image" alt="" width="260px" height="190px">
+        </div>
+        <div class="ekart-product-color">
+           <h3>Colors : {{prod.color}} </h3> 
+        </div>
+        <div class="ekart-product-price">
+           <h2>Price : {{prod.price}} </h2>
+        </div>
+        <div class="ekart-product-brand">
+           <h4>Brand : {{prod.brand}} </h4> 
+        </div>
+        <div class="ekart-product-dispcription">
+           <h5>Description : {{prod.description}} </h5> 
+        </div>
+    </div>
+    
+
+
+</div>
